@@ -7,13 +7,13 @@ type
 elemento = integer;
 tqueue = ^TipoNodo;
 TipoNodo = record
-						info : elemento;
-						ps : tqueue;
-					end;
+info : elemento;
+ps : tqueue;
+end;
 TipoQueue = record
-							head : tqueue;
-							tail : tqueue;
-					end;
+	head : tqueue;
+	tail : tqueue;
+end;
 queue = tqueue;
 
 procedure CreateQ(var S : TipoQueue);
